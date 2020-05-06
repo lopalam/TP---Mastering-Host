@@ -361,3 +361,10 @@
 ### Scripting
 
 Mon Os étant un Ubuntu/Linux le script sera donc en `bash`.
+
+Le script affichant les infos sur l'os est [ici](https://github.com/lopalam/TP---Mastering-Host/blob/master/infos_os.sh).
+
+Le script qui permet d'éteindre ou de lock son ordinateur est [ici](https://github.com/lopalam/TP---Mastering-Host/blob/master/script2.sh).
+
+### Gestion de softs
+
