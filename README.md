@@ -368,3 +368,144 @@ Le script qui permet d'éteindre ou de lock son ordinateur est [ici](https://git
 
 ### Gestion de softs
 
+Les avantages d'utiliser un gestionnaire de paquets :
+ 
+ - Le contenu téléchargable via les gestionnaire de paquets sont vérifier contrairement au contenu téléchargable en direct.
+
+ - Tout les protagonistes sont sûr que les fichier ne seront pass suprimmer.
+
+ - Le téléchargement se fait de façon sécurisé à chaque fois.
+
+Etant sous ubuntu qui est basé sur debian, mon gestionnaire de paquets est `apt`.
+
+La liste de tout les paquet installer :
+```bash
+┌─[lopalam@lopalam-kubuntu]─[~/Bureau/network_project]
+└──╼ $apt-cache policy
+Fichiers du paquet :
+ 100 /var/lib/dpkg/status
+     release a=now
+ 500 http://packages.microsoft.com/repos/vscode stable/main amd64 Packages
+     release o=vscode stable,a=stable,n=stable,l=vscode stable,c=main,b=amd64
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/repos/ms-teams stable/main amd64 Packages
+     release o=ms-teams stable,a=stable,n=stable,l=ms-teams stable,c=main,b=amd64
+     origin packages.microsoft.com
+ 500 http://ppa.launchpad.net/gns3/ppa/ubuntu bionic/main i386 Packages
+     release v=18.04,o=LP-PPA-gns3,a=bionic,n=bionic,l=GNS3 PPA,c=main,b=i386
+     origin ppa.launchpad.net
+ 500 http://ppa.launchpad.net/gns3/ppa/ubuntu bionic/main amd64 Packages
+     release v=18.04,o=LP-PPA-gns3,a=bionic,n=bionic,l=GNS3 PPA,c=main,b=amd64
+     origin ppa.launchpad.net
+ 500 https://packages.microsoft.com/ubuntu/18.04/mssql-server-2019 bionic/main arm64 Packages
+     release o=mssql-server-2019-bionic bionic,a=bionic,n=bionic,l=mssql-server-2019-bionic bionic,c=main,b=arm64
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/ubuntu/18.04/mssql-server-2019 bionic/main armhf Packages
+     release o=mssql-server-2019-bionic bionic,a=bionic,n=bionic,l=mssql-server-2019-bionic bionic,c=main,b=armhf
+     origin packages.microsoft.com
+ 500 https://packages.microsoft.com/ubuntu/18.04/mssql-server-2019 bionic/main amd64 Packages
+     release o=mssql-server-2019-bionic bionic,a=bionic,n=bionic,l=mssql-server-2019-bionic bionic,c=main,b=amd64
+     origin packages.microsoft.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/multiverse i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=multiverse,b=i386
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=multiverse,b=amd64
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/universe i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=universe,b=i386
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=universe,b=amd64
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/restricted i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=restricted,b=i386
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=restricted,b=amd64
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/main i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=main,b=i386
+     origin security.ubuntu.com
+ 500 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-security,n=bionic,l=Ubuntu,c=main,b=amd64
+     origin security.ubuntu.com
+ 100 http://fr.archive.ubuntu.com/ubuntu bionic-backports/universe i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-backports,n=bionic,l=Ubuntu,c=universe,b=i386
+     origin fr.archive.ubuntu.com
+ 100 http://fr.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-backports,n=bionic,l=Ubuntu,c=universe,b=amd64
+     origin fr.archive.ubuntu.com
+ 100 http://fr.archive.ubuntu.com/ubuntu bionic-backports/main i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-backports,n=bionic,l=Ubuntu,c=main,b=i386
+     origin fr.archive.ubuntu.com
+ 100 http://fr.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-backports,n=bionic,l=Ubuntu,c=main,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/multiverse i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=multiverse,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=multiverse,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=universe,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=universe,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/restricted i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=restricted,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=restricted,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=main,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic-updates,n=bionic,l=Ubuntu,c=main,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/multiverse i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=multiverse,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=multiverse,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/universe i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=universe,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=universe,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/restricted i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=restricted,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/restricted amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=restricted,b=amd64
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/main i386 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=main,b=i386
+     origin fr.archive.ubuntu.com
+ 500 http://fr.archive.ubuntu.com/ubuntu bionic/main amd64 Packages
+     release v=18.04,o=Ubuntu,a=bionic,n=bionic,l=Ubuntu,c=main,b=amd64
+     origin fr.archive.ubuntu.com
+Paquets épinglés :
+```
+
+Tout les debut de lignes `http://[...]` sont les serveur contactés lors du téléchargement.
+
+### Chiffrement et notion de confiance
+
+Un certificat contient :
+
+ - Une information principale qui est la signature 
+ - Et des métadonnées :
+   
+    - L'autorité de certification
+    - Le nom du propriétaire
+    - Son e-mail
+    - Les dates de validitées
+
+#### Chiffrement de mails
+
